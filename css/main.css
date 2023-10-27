@@ -1,0 +1,559 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Autour One', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+body {
+    height: 2000px;
+    
+}
+
+header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999999999999999999999999999999999999999;
+    transition: 1s;
+    
+
+}
+
+header nav {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+header nav .logo h1 {
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 30px;
+    color: rgb(77,19,209) ;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header nav ul li {
+    margin-top: 23px;
+    margin-left: 10px;
+
+}
+
+header nav ul li a {
+    font-size: 18px;
+    /* color: rgb(57,151,225); */
+    color: rgb(77,19,209) ;
+    padding: 10px;
+    margin-right: 50px;
+}
+
+header nav ul li a:hover {
+    text-decoration: none;
+    color: rgb(77,19,209) ;
+}
+
+header nav .btns {
+    margin-top: 18px;
+    
+}
+
+
+header nav .toggle-menu {
+    display: none;
+}
+
+
+header nav .toggle-menu i {
+    margin-top: 25px;
+    margin-right: 20px;
+    font-size: 23px;
+    color: rgb(77, 19 ,  209);
+}
+
+
+
+@media (max-width :750px) {
+    
+    body {
+        height: 3500px;
+    }
+
+    header {
+        width: 100% ; 
+        height: auto;
+        
+        padding-bottom: 15px;
+
+
+    }
+
+    header nav {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    header nav ul {
+        position: absolute;
+        top: -600%;
+        left: 0;
+        right: 0;
+        background-color: rgb(238,238,238);
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+        transition: 1s;
+    }
+
+    header nav ul li {
+        margin-bottom: 20px;
+        
+    }
+
+    header nav ul li a {
+        padding: 13px;
+        
+    }
+
+
+    header nav .toggle-menu {
+        display: block;
+    }
+
+    .return-nav {
+        top: 70px;
+        transition: 1s;
+    }
+}
+
+@media (min-width : 751px) and (max-width : 950px) {
+    body {
+        height: 3730px;
+    }
+}
+
+
+/*  ============================================== end header =================================== */
+
+
+/*  =============================================== main =========================================== */
+
+.main {
+    background-color: rgb(251,248,243);
+    margin-top:  64px;
+    width: 100%;
+    height: auto;
+}
+
+.main .star i {
+    color: rgb(255,149,41);
+    font-size: 16px;
+    padding-top: 120px;
+}
+
+.main .star h2 {
+    padding-top: 120px;
+    font-size: 16px;
+    color:  #869791;
+    margin-left: -100px;
+}
+
+
+.main h1 {
+    padding-top: 27px;
+    font-size: 31px;
+    color: black;
+    font-weight: bold;
+}
+
+.main p {
+    font-size: 15px;
+    color: #424242;
+    padding-top: 25px;
+}
+
+.main a {
+    padding: 10px;
+    background-color: rgb(77,19,209);
+    color: #fff;
+    border-radius: 13px;
+    transition: 1s;
+    margin-right: 10px;
+}
+
+.main a:hover {
+    text-decoration: none;
+    background-color: rgb(69,177,158);
+}
+
+
+.main .description h3 {
+    font-size: 15px;
+    color: #424242;
+}
+
+.main .description i {
+    padding-top: 30px;
+    color: rgb(69,177,158);
+}
+
+.main .img-fluid {
+    width: 100%;
+    height: auto;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
+@media (max-width :750px) {
+    .main .star h2 {
+        margin-left: 0px;
+        padding-top: 80px;
+    }
+
+    .main .star i {
+        color: rgb(255,149,41);
+        font-size: 16px;
+        padding-top: 80px;
+    }
+
+
+}
+
+
+@media (min-width : 751px) and (max-width : 950px) {
+    .main {
+        text-align: center;
+    }
+}
+
+
+/*  =================================================== end main ======================================================= */
+/*  ==================================================== why-we ===========================================================*/
+
+
+.why-we {
+    
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+
+
+}
+
+.why-we h3 {
+    padding-top: 20px;
+    font-size: 15px;
+    color: rgb(77,19,209);
+}
+
+.why-we h4 {
+    font-size: 33px;
+    color: rgb(33,37,41);
+}
+
+
+.why-info {
+    margin-top: 30px;
+    
+}
+
+.why-info .img-fluid {
+    margin-bottom: 12px;
+    padding-top: 20px;
+}
+
+.why-info h6 {
+    font-size: 23px;
+    color: rgb(77,19,209);
+    
+}
+
+.why-info p {
+    font-size: 15px;
+    color: rgb(33,37,41);
+    padding-bottom: 10px;
+}
+
+
+
+@media (max-width :750px) {
+
+    .why-info {
+        margin-top: 30px;
+        
+    }
+
+
+    .why-info .info-2 {
+        margin-bottom: 20px;
+        
+        text-align: center;
+    }
+}
+
+@media (min-width : 751px) and (max-width :950px) {
+
+    .why-info {
+        margin-top: 30px;
+        
+    }
+
+
+    .why-info .info-2 {
+        margin-bottom: 20px;
+        
+        text-align: center;
+    }
+}
+
+
+/*  ========================================================== end why-we =================================================== */
+
+
+
+/*  ========================================================= my-portfolio ============================================= */
+
+
+.my-portfolio {
+    /* background-color: red; */
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    background-color: rgb(77,19,209) ;
+    border-radius: 20px;
+
+}
+
+
+
+.my-portfolio .my-portfoio-info h5 {
+    padding-top: 120px;
+    
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.my-portfolio .my-portfoio-info p {
+    
+    font-size: 14px;
+    color: #fff;
+}
+
+.my-portfolio .my-portfoio-info .btn {
+    background-color: #fff;
+    
+    color: rgb(77,19,209);
+    transition: 1s;
+}
+
+.my-portfolio .my-portfoio-info .btn:hover {
+    background-color: rgb(69,177,158);
+    color: #fff;
+}
+
+.my-portfolio .my-portfoio-info .img-fluid {
+    margin-top: 20px;
+    padding-right: 30px;
+    
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width : 750px) {
+    .my-portfolio .my-portfoio-info .img-fluid {
+        margin-left: 15px;
+    }
+
+    .my-portfolio .my-portfoio-info h5 {
+        margin-left: 15px;
+    }
+    
+    .my-portfolio .my-portfoio-info p {
+        margin-left: 15px;
+    }
+    
+    .my-portfolio .my-portfoio-info .btn {
+        margin-left: 15px;
+    }
+}
+
+/*  ======================================================================= end my-portfolio ========================================= */
+
+
+
+/*  =================================================================== Customer-opinions ========================================= */
+
+.Customer-opinions {
+    width: 100%;
+    height: auto;
+    /* background-color: rebeccapurple; */
+    margin-top: 50px;
+}
+
+.Customer-opinions .info-1 {
+    /* background-color: green; */
+    border: 1px solid #808080;
+}
+
+.Customer-opinions .info-1 .info-2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    /* background-color: red; */
+}
+
+.Customer-opinions .info-1 .info-3 {
+    width: 30%;
+    height: auto;
+}
+
+.Customer-opinions .info-1 .info-2 .info-3 .img-fluid {
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.Customer-opinions .info-1 .info-4 {
+    width: 70%;
+    height: auto;
+}
+
+.Customer-opinions .info-1 .info-2 .info-4 h2 {
+    font-size: 16px;
+    color: rgb(77,19,209);
+    margin-top: 15px;
+}
+
+.Customer-opinions  .info-2 .info-4 p {
+    font-size: 13px;
+    color: #000;
+
+}
+
+.Customer-opinions .info-1 p {
+    font-size: 15px;
+    color: rgb(77,19,209);
+    margin-left: 18px;
+}
+
+.Customer-opinions .info-1 .btn {
+    background-color: #fff;
+    border: 1px solid #808080;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    color:  rgb(77,19,209);
+    transition: 1s;
+
+}
+
+.Customer-opinions .info-1 .btn:hover {
+    background-color: rgb(77,19,209);
+    color: #fff;
+}
+
+
+
+/*  ==================================================================== end customer opinions ===================================== */
+
+
+
+/*  ================================================================================== end-content ================================= */
+
+.end-content {
+    margin-top: 80px;
+    width: 100%;
+    height: auto;
+    background-color: #FBF8F3 ;
+}
+
+
+.end-content h2 {
+    margin-top: 30px;
+    font-size: 20px;
+    color: rgb(33,37,41);
+}
+
+.end-content p {
+    font-size: 14px;
+    color: rgb(33,37,41);
+}
+
+.end-content ul {
+    list-style-type: none;
+}
+
+.end-content ul li {
+    text-decoration: none;
+}
+
+
+.end-content ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color:  rgb(77,19,209);
+
+}
+
+.end-content ul li a:hover {
+    text-decoration: none;
+    color:  rgb(77,19,209);
+}
+
+@media (max-width : 750px) {
+    .end-content {
+        text-align: center;
+    }
+}
+
+/*  ========================================================================= end end-content ====================================== */
+
+
+
+/*  ====================================================================== info-developer ========================================= */
+
+.info-developer {
+    
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.info-developer h3 {
+    font-size: 16px;
+    color: rgb(77, 19 ,  209);
+}
+
+.info-developer h4 {
+    font-size: 16px;
+    color: rgb(77,19,209);
+}
+
+.info-developer h4 a {
+    font-size: 16px;
+    color: rgb(77,19,209);
+}
+
+.info-developer h4 a:hover {
+    text-decoration: none;
+    color: rgb(77,19,209);
+}
+
+
